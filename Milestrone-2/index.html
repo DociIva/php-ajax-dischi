@@ -16,16 +16,22 @@
         
    <!--header-->
         <header>
-             <h2>Dischi</h2>
-             <ul>
-                 <li v-for="album in albums">
-                     {{album.title}}
-                 </li>
-             </ul>
+            <div class="container-img">
+                <img src="./img/logo.png" alt="Logo spotify">
+            </div>
         </header>  
         <!--main--> 
         <main>
-
+            <div class="albums container">
+                  <div class="album-content" v-for="(album, index ) in albums">
+                     <img :src="album.poster" alt="Logo album">
+                     <h3>{{album.title}}</h3>
+                     <h3>{{album.author}}</h3>
+                     <h4>{{album.year}}</h4>
+                     <h5>{{album.genre}}</h5>
+                  </div>
+              
+          </div>
         </main>
 
    </div>

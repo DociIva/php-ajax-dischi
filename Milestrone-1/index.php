@@ -22,7 +22,6 @@ require_once __DIR__ . '/partials/database.php'
    </header>
    <!--main-->
    <main>
-
        <div class="albums container">
           <?php foreach ($database as $data) {
               //var_dump($data);  ?>
