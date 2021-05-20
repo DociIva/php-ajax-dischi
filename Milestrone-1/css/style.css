@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    
+    background-color: #182d3d;
+}
+
+h3,
+h4,
+h5 {
+    margin: 10px;
+}
+/*Utility*/
+.container-img {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+/*Layout*/
+header {
+    background-color: #132431;
+}
+header img {
+    width: 40px;
+}
+/*main*/
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+}
+.album-content {
+    flex-basis: calc(100% / 3 - 40px);
+    text-align: center;
+    color: #fff;
+    margin: 20px 20px;
+    background-color: #000;
+    padding: 40px;
+    cursor: pointer;
+}
+.album-content img {
+    width: 120px;
+}
